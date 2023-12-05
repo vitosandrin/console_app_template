@@ -2,7 +2,7 @@ import figlet from "figlet";
 import { Command } from "commander";
 import logger from "./logger";
 
-class Application {
+export class Application {
   private program: Command;
   constructor() {
     this.program = new Command();
@@ -26,4 +26,3 @@ class Application {
     }
   }
 }
-export default Application;

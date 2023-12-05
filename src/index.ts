@@ -1,4 +1,4 @@
-import Application from "./app";
+import { Application } from "./app";
 import logger from "./logger";
 
 enum ExitStatus {
