@@ -1,3 +1,7 @@
+interface IPerson {
+  name: string;
+  age: number;
+}
 export class PersonService {
   private name: string;
   private age: number;
@@ -10,5 +14,8 @@ export class PersonService {
   public sayHello(): string {
     return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
   }
-}
 
+  public getPerson(): IPerson {
+    return { name: this.name, age: this.age };
+  }
+}
