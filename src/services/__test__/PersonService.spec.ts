@@ -8,7 +8,7 @@ describe("PersonService", () => {
       return expect(person.sayHello()).toBe("Hello, my name is John and I am 30 years old.");
     });
   });
-  describe("sayHello", () => {
+  describe("getPerson", () => {
     it("should return a person", async () => {
       return expect(person.getPerson()).toEqual({ name: "John", age: 30 });
     });
